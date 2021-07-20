@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+@font-face {
+  font-family: "Druk Text Wide";
+  src: url("./fonts/Druk Text Wide.otf");
+}
+@font-face {
+  font-family: "Druk Wide";
+  src: url("./fonts/Druk Wide Bold.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: auto;
+  scrollbar-color: #fff #2e2e2e;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #2e2e2e;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 10px;
+}
+.bwin {
+  min-width: 320px;
+  max-width: 1920px;
+}
+.bwin__main {
+  background-image: url("./img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 22px 7% 12px;
+  position: relative;
+}
+.bwin__logo {
+  height: 22px;
+  margin-bottom: 15px;
+}
+.bwin__guarantee {
+  font-family: "Druk Wide", sans-serif;
+  font-size: 53px;
+  line-height: 70px;
+  font-weight: 700;
+  color: #ffcc00;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.bwin__title {
+  font-family: "Druk Text Wide", sans-serif;
+  font-size: 32px;
+  line-height: 31px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.bwin__title_small {
+  font-size: 22px;
+  line-height: 22px;
+  display: block;
+}
+.bwin__info {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.bwin__info_small {
+  font-size: 11px;
+  line-height: 12px;
+  display: block;
+}
+.bwin__play-btn {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  padding: 10px 22px;
+  background-color: #ffcc00;
+  color: #000;
+  border-radius: 5px;
+  margin: 0 auto 22px;
+  cursor: pointer;
+  border: none;
+  display: block;
+}
+.bwin__player-img {
+  width: 100%;
+  height: auto;
+  max-height: 483px;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+.bwin__conditions {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10px;
+  display: inline-block;
+  text-align: center;
+}
+.bwin__footer {
+  padding: 10px 7% 11px;
+  background-color: #0e0e0e;
+  text-align: center;
+  position: relative;
+}
+.bwin__links {
+  display: flex;
+  justify-content: space-between;
+}
+.bwin__stores-links {
+  display: flex;
+}
+.bwin__stores-img {
+  height: 19px;
+}
+.bwin__logos-links {
+  display: flex;
+}
+.bwin__logo-img {
+  height: 21px;
+}
+.bwin__logo-link {
+  margin-right: 10px;
+}
+.bwin__logo-link:last-child {
+  margin-right: 0;
+}
+.bwin__stores-link {
+  margin-right: 9px;
+}
+.bwin__stores-link:last-child {
+  margin-right: 0;
+}
+.container-popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.bwin__popup {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.popup {
+  width: 90%;
+  background-color: #171717;
+  padding: 12px 15px 12px 20px;
+  max-width: 600px;
+}
+.popup__main-content {
+  padding: 8px 23px 0 0;
+  height: 380px;
+  background-color: #171717;
+  color: #fff;
+  overflow-y: scroll;
+}
+.popup__title {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 700;
+  font-family: "Druk Text Wide", sans-serif;
+  margin-bottom: 20px;
+}
+.popup__text-item {
+  color: #8d7d3e;
+  text-align: start;
+  margin-left: 12px;
+}
+.popup__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-align: start;
+  margin-bottom: 14px;
+}
+.popup__close-icon {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 100%;
+  transform: translate(-10px);
+}
+.popup_active {
+  display: block;
+}
+@media (min-width: 768px) {
+  .bwin__logo {
+    height: 50px;
+  }
+  .bwin__guarantee {
+    font-size: 80px;
+    line-height: 120px;
+  }
+  .bwin__title {
+    font-size: 42px;
+    line-height: 42px;
+  }
+  .bwin__title_small {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .bwin__info {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .bwin__info_small {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .bwin__play-btn {
+    font-size: 28px;
+    line-height: 34px;
+    padding: 18px 26px;
+    margin-bottom: 40px;
+  }
+  .bwin__stores-img {
+    height: 40px;
+  }
+  .bwin__logo-img {
+    height: 40px;
+  }
+  .bwin__conditions {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+  .bwin__player-img {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .bwin__logo {
+    height: 59px;
+    margin-bottom: 60px;
+  }
+  .bwin__guarantee {
+    font-size: 115px;
+    line-height: 160px;
+    margin-bottom: 40px;
+  }
+  .bwin__title {
+    font-size: 67px;
+    line-height: 67px;
+    margin-bottom: 50px;
+    text-align: start;
+  }
+  .bwin__title_small {
+    font-size: 47px;
+    line-height: 47px;
+  }
+  .bwin__info {
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 60px;
+    text-align: start;
+  }
+  .bwin__info_small {
+    font-size: 23px;
+    line-height: 37px;
+  }
+  .bwin__play-btn {
+    font-size: 35px;
+    line-height: 41px;
+    padding: 21px 33px;
+  }
+  .bwin__main {
+    display: flex;
+    padding: 67px 8% 90px;
+    justify-content: space-between;
+  }
+  .bwin__main-info {
+    margin-right: 30px;
+  }
+  .bwin__player-img {
+    margin-top: 210px;
+    margin-bottom: 0;
+    width: auto;
+  }
+  .bwin__stores-img {
+    height: 50px;
+  }
+  .bwin__stores-link {
+    margin-right: 34px;
+  }
+  .bwin__stores-link:last-child {
+    margin-right: 0;
+  }
+  .bwin__logo-link {
+    margin-right: 25px;
+  }
+  .bwin__logo-link:last-child {
+    margin-right: 0;
+  }
+  .bwin__logo-img {
+    height: 50px;
+  }
+  .popup__close-icon {
+    width: 21px;
+    height: 21px;
+    transform: translate(-13px);
+  }
+  .popup__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .popup__text {
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 60px;
+  }
+  .bwin__popup {
+    bottom: 60px;
+  }
+  .popup {
+    padding: 33px 30px 40px 43px;
+  }
+  .popup__main-content {
+    padding: 20px 37px 0 0;
+    height: 580px;
+  }
+  .popup__title {
+    margin-bottom: 30px;
+  }
+  .bwin__conditions {
+    font-size: 23px;
+    line-height: 27px;
+    position: absolute;
+    top: 34px;
+    transform: translate(-50%);
+    margin-bottom: 0;
+  }
+  .popup__text-item {
+    margin-left: 20px;
+  }
+  .bwin__footer {
+    padding: 25px 8% 35px;
+  }
+}
